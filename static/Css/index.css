@@ -9,9 +9,26 @@ body{
 }
 
 #autumn-bar{
+    display: flex;
+    flex-direction: row;
     border: 3px solid red;
     width: 100vw;
-    height: 90px;
+    height: 100px;
+}
+
+#autumn-bar div{
+    height: 100%;
+}
+
+#autumn-bar #left-bar,
+#autumn-bar #right-bar{
+    width: 200px;
+    border: 3px solid gold;
+}
+
+#autumn-bar #middle-bar{
+    width: calc(100vw - 200px - 200px);
+    border: 3px solid black;
 }
 
 #autumn-post{
@@ -42,4 +59,11 @@ body{
     height: 80vh;
     border: 3px solid green;
     border-radius: 20px;
+}
+
+.autumn-blob{
+    position: fixed;
+    border-radius: 50%;
+    background-color: orange;
+    z-index: -100;
 }
